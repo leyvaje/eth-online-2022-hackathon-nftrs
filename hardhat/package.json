@@ -1,0 +1,14 @@
+{
+  "name": "nftr-hardhat",
+  "version": "1.0.0",
+  "description": "Hardhat for NTFTRS eth global hackathon ",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "leyvaje",
+  "license": "ISC",
+  "devDependencies": {
+    "hardhat": "^2.11.2"
+  }
+}
