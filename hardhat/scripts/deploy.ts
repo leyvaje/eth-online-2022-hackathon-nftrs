@@ -1,6 +1,19 @@
 import { ethers } from "hardhat";
 
 async function main() {
+    const contract = await ethers.getContractFactory('NftrsContract');
+    const contractDeploy = await contract.deploy();
+    await contractDeploy.deployed();
+    console.log("Contract deployed to:", contractDeploy.address);
+}
+
+main().catch((error) => {
+    console.error(error);
+    process.exitCode = 1;
+});
+
+/*
+async function main() {
   const currentTimestampInSeconds = Math.round(Date.now() / 1000);
   const ONE_YEAR_IN_SECS = 365 * 24 * 60 * 60;
   const unlockTime = currentTimestampInSeconds + ONE_YEAR_IN_SECS;
@@ -21,3 +34,4 @@ main().catch((error) => {
   console.error(error);
   process.exitCode = 1;
 });
+*/
