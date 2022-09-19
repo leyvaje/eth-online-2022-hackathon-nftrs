@@ -20,5 +20,6 @@ contract NftrsContract is ERC721URIStorage {
         _safeMint(msg.sender, newItemId);
         _setTokenURI(newItemId, "metadata.json");
         _tokenIds.increment();
+        console.log("A new NFTRS with id %s was minted to %s", newItemId, msg.sender);
     }
 }
