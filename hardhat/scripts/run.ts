@@ -6,7 +6,7 @@ async function main() {
     await contractDeploy.deployed();
     console.log("Contract deployed to:", contractDeploy.address);
 
-  var txn = await contractDeploy.mintHouseProperty();
+    var txn = await contractDeploy.mintHouseProperty();
     txn.wait;
 
     var txn = await contractDeploy.mintHouseProperty();
