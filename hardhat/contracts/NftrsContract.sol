@@ -15,7 +15,7 @@ contract NftrsContract is ERC721URIStorage {
     Counters.Counter private _tokenIds;
 
     constructor() ERC721("HousingNFTRS", "HOUSE") {
-        console.log("This is my Housing NftrsContract. Woah!");
+        console.log("This is @LEYVAJE Housing NFT Real State Contract. Cool!");
     }
 
     function mintHouseProperty() public {
@@ -23,6 +23,6 @@ contract NftrsContract is ERC721URIStorage {
         _safeMint(msg.sender, newItemId);
         _setTokenURI(newItemId, _data);
         _tokenIds.increment();
-        console.log("A new NFTRS with id %s was minted to %s", newItemId, msg.sender);
+        console.log("A new @LEYVAJE House NFTRS with id %s was minted to %s", newItemId, msg.sender);
     }
 }

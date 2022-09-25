@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:nftrs_flutter_dapp/contract_provider.dart';
+import 'package:nftrs_flutter_dapp/house_nftrs.dart';
 import 'package:provider/provider.dart';
 
 import 'metamask_provider.dart';
@@ -49,6 +51,16 @@ class MyApp extends StatelessWidget {
                                   ],
                                 ),
                               ),
+                              /*
+                              Container(
+                                color: Colors.white,
+                                child: ListView(
+                                  children: [
+                                  ListTile(title: Text('Nft 1', style: TextStyle(color: Colors.white),)),
+                                  ListTile(title: Text('Nft 2 ')),
+                                ],),
+                              )
+                              */
                             ],
                           );
                         } else {
@@ -57,7 +69,7 @@ class MyApp extends StatelessWidget {
                         return Text(
                           message,
                           textAlign: TextAlign.center,
-                          style: TextStyle(color: Colors.white),
+                          style: const TextStyle(color: Colors.white),
                         );
                       },
                     ),
